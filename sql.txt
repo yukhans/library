@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS `member` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `fname` varchar(50) NOT NULL,
+ `lname` varchar(50) NOT NULL,
+ `username` varchar(50) NOT NULL,
+ `email` varchar(50) NOT NULL,
+ `password` varchar(50) NOT NULL,
+ `create_datetime` datetime NOT NULL,
+ PRIMARY KEY (`id`)
+);
+
+ALTER TABLE `member` ADD `book1` varchar(256) NOT NULL;
+ALTER TABLE `member` ADD `book2` varchar(256) NOT NULL;
+ALTER TABLE `member` ADD `book3` varchar(256) NOT NULL;
